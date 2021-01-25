@@ -60,7 +60,7 @@ func open(opener func(i int) (d2xxHandle, int), i int) (Dev, error) {
 	}
 	// Makes a copy of the generic instance.
 	switch g.h.t {
-	case ftdi.FT232H:
+	case ftdi.FT232H, ftdi.FT2232H:
 		f, err := newFT232H(g)
 		if err != nil {
 			h.closeDev()
