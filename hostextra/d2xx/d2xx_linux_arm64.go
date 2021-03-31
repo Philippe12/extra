@@ -3,15 +3,15 @@
 // that can be found in the LICENSE file.
 
 // +build cgo
-// +build !darwin,!amd64
-// +build !linux,!amd64
-// +build !linux,!arm
-// +build !linux,!arm64
-// +build !windows
 
 package d2xx
 
+import _ "periph.io/x/extra/hostextra/d2xx/linux_arm64"
+
+// TODO(maruel): https://github.com/golang/go/issues/7211 would help target the
+// optimal ARM architecture.
+
 /*
-#cgo LDFLAGS: -lftd2xx
+#cgo LDFLAGS: ${SRCDIR}/linux_arm64/libftd2xx.a
 */
 import "C"
