@@ -6,6 +6,8 @@
 
 package d2xx
 
+import _ "periph.io/x/extra/hostextra/d2xx/linux_arm"
+
 // TODO(maruel): https://github.com/golang/go/issues/7211 would help target the
 // optimal ARM architecture.
 

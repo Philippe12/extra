@@ -6,6 +6,8 @@
 
 package d2xx
 
+import _ "periph.io/x/extra/hostextra/d2xx/linux_amd64"
+
 /*
 #cgo LDFLAGS: ${SRCDIR}/linux_amd64/libftd2xx.a
 */
