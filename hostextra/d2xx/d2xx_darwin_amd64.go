@@ -5,7 +5,7 @@
 // +build cgo
 
 package d2xx
-
+import "periph.io/x/extra/hostextra/d2xx/darwin_amd64"
 /*
 #cgo LDFLAGS: -framework CoreFoundation -framework IOKit ${SRCDIR}/darwin_amd64/libftd2xx.a
 */
